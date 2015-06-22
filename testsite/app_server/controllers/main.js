@@ -8,6 +8,6 @@ var router = express.Router();
 
 // module.exports = router;
 
-module.exports = function (app) {
-	require('./main')(app)
+module.exports.index = function(req, res) {
+	res.render('index', {title: 'Express'});
 }
